@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>CHEAT SHEET – OSU! GLOSSÁRIO</title>
+<style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#181A1B;color:#F1F1F1;margin:0;padding:20px;}
+    .title{font-size:36px;text-align:center;color:#00E676;margin-bottom:30px;font-weight:bold;text-transform:uppercase;}
+    .section{margin-bottom:40px;}
+    .section h2{background:#222C22;color:#00E676;padding:10px 15px;font-size:22px;border-radius:6px;text-transform:uppercase;letter-spacing:1px;}
+    table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px;background:#23272A;}
+    th,td{border:1px solid #333;padding:8px;vertical-align:top;}
+    tr:nth-child(even){background:#1E2225;}
+    th{background:#00B85C;color:#fff;}
+    code{white-space:nowrap;color:#00E676;}
+    .indice{margin:30px 0 40px 0;padding:0;background:none;border-radius:12px;box-shadow:none;display:flex;justify-content:center;gap:0;flex-wrap:wrap;}
+    .indice-list{display:flex;gap:0;flex-wrap:wrap;background:#23272A;border-radius:12px;box-shadow:0 2px 8px #111;overflow:hidden;}
+    .indice-link{display:flex;align-items:center;gap:6px;padding:14px 22px;font-size:16px;font-weight:600;color:#00E676;background:none;border:none;outline:none;text-decoration:none;transition:background 0.2s, color 0.2s;position:relative;}
+    .indice-link:not(:last-child)::after{content:'';display:block;width:1px;height:22px;background:#1E2225;position:absolute;right:0;top:50%;transform:translateY(-50%);}
+    .indice-link:hover,.indice-link:focus{background:#1E2225;color:#7DECB4;z-index:1;}
+    .indice-title{font-size:18px;font-weight:bold;color:#B2FFDA;margin-bottom:10px;text-align:center;width:100%;}
+    .tooltip {
+      border-bottom: 1px dotted #00E676;
+      cursor: help;
+      position: relative;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 220px;
+      background-color: #222C22;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -110px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 12px;
+      border: 1px solid #00E676;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    .icon {margin-right:8px;}
+    .update-info {font-size:12px;color:#7DECB4;text-align:right;margin-bottom:10px;}
+    .suggestion {font-size:13px;color:#B2FFDA;background:#1E2225;padding:10px 15px;border-radius:6px;margin-bottom:20px;}
+    @media print{body{padding:0;background:#fff;color:#000;} .title{font-size:28px;} table{font-size:12px;background:#fff;color:#000;} th,td{border:1px solid #ddd;} th{background:#00B85C;color:#fff;} .section h2{background:#00B85C;color:#fff;}}
+</style>
+</head>
+<body>
+<div class="title">CHEAT SHEET – OSU! GLOSSÁRIO</div>
+<div class="update-info">Última atualização: Junho/2024</div>
+<div class="suggestion">Sugira novos termos ou correções: <a href="mailto:osu.glossario@suaempresa.com">osu.glossario@suaempresa.com</a></div>
+
+<!-- ================== ÍNDICE ================== -->
+<div class="indice">
+  <div class="indice-title">Navegação Rápida</div>
+  <nav class="indice-list" aria-label="Índice do Glossário">
+    <a href="#metricas" class="indice-link" title="Métricas Básicas"><span class="icon">📏</span>Métricas</a>
+    <a href="#mods" class="indice-link" title="Mods"><span class="icon">🛠️</span>Mods</a>
+    <a href="#pontuacao" class="indice-link" title="Pontuação & Status"><span class="icon">🏆</span>Pontuação</a>
+    <a href="#gameplay" class="indice-link" title="Gameplay & Mecânicas"><span class="icon">🎮</span>Gameplay</a>
+    <a href="#comunidade" class="indice-link" title="Comunidade & Outros"><span class="icon">🌐</span>Comunidade</a>
+    <a href="#extras" class="indice-link" title="Extras & Termos Avançados"><span class="icon">✨</span>Extras</a>
+  </nav>
+</div>
+
+<!-- ================== MÉTRICAS BÁSICAS ================== -->
+<div class="section" id="metricas">
+  <h2><span class="icon">📏</span>Métricas Básicas</h2>
+  <table>
+    <tr><th>Termo</th><th>Definição</th><th>Exemplo</th></tr>
+    <tr><td><code>AR</code> <span class="tooltip">(Approach Rate)<span class="tooltiptext">Tempo que o círculo leva para desaparecer</span></span></td><td>Controla quão cedo o objeto aparece.</td><td>AR 10: objetos aparecem e somem muito rápido.</td></tr>
+    <tr><td><code>OD</code> <span class="tooltip">(Overall Difficulty)<span class="tooltiptext">Dificuldade geral de acerto</span></span></td><td>Tolerância nos julgamentos de hit; afeta janelas de acerto e valor de HP.</td><td>OD 8: janela de acerto muito pequena.</td></tr>
+    <tr><td><code>CS</code> <span class="tooltip">(Circle Size)<span class="tooltiptext">Tamanho dos círculos</span></span></td><td>CS baixo = círculos maiores, CS alto = menores.</td><td>CS 4: tamanho padrão.</td></tr>
+    <tr><td><code>HP</code> <span class="tooltip">(HP Drain)<span class="tooltiptext">Taxa de drenagem de vida</span></span></td><td>Mais alto = mais difícil manter HP.</td><td>HP 7: vida desce rápido ao errar.</td></tr>
+    <tr><td><code>BPM</code></td><td>Batidas por minuto da música; base de velocidade do mapa.</td><td>200 BPM: música rápida.</td></tr>
+    <tr><td><code>SR</code> <span class="tooltip">(Star Rating)<span class="tooltiptext">Dificuldade numérica estimada</span></span></td><td>Dificuldade do mapa (★).</td><td>SR 5.2: mapa intermediário.</td></tr>
+    <tr><td><code>pp</code> <span class="tooltip">(Performance Points)<span class="tooltiptext">Pontuação de habilidade</span></span></td><td>Pontuação usada no ranking global.</td><td>Mapa vale 300pp.</td></tr>
+    <tr><td><code>Acc</code> <span class="tooltip">(Accuracy)<span class="tooltiptext">Precisão média dos hits</span></span></td><td>0‑100%.</td><td>Acc 98%: excelente precisão.</td></tr>
+    <tr><td><code>Combo</code></td><td>Sequência de acertos consecutivos sem errar.</td><td>Combo 500x: 500 acertos seguidos.</td></tr>
+    <tr><td><code>Miss</code></td><td>Objeto não acertado; zera combo e reduz HP.</td><td>Miss em slider: perdeu combo.</td></tr>
+  </table>
+  <div style="margin-top:8px;font-size:12px;">Saiba mais: <a href="https://osu.ppy.sh/wiki/pt/Beatmapping/Approach_rate" target="_blank">Wiki oficial</a></div>
+</div>
+
+<!-- ================== MODS ================== -->
+<div class="section" id="mods">
+  <h2><span class="icon">🛠️</span>Mods (Modificadores)</h2>
+  <table>
+    <tr><th>Mod</th><th>Efeito</th><th>Exemplo</th></tr>
+    <tr><td><code>NM</code> (No Mod)</td><td>Sem modificadores; base padrão.</td><td>Jogar sem mods.</td></tr>
+    <tr><td><code>HD</code> (Hidden)</td><td>Objetos desaparecem antes de serem clicados; bônus de pp.</td><td>HD + HR para mais desafio.</td></tr>
+    <tr><td><code>HR</code> (Hard Rock)</td><td>Aumenta AR, CS, OD e HP; inverte jogabilidade vertical; bônus.</td><td>HR em mapas fáceis para mais pp.</td></tr>
+    <tr><td><code>DT</code> (Double Time)</td><td>Acelera música e objetos em 50%; bônus.</td><td>DT em mapas lentos para mais desafio.</td></tr>
+    <tr><td><code>NC</code> (Nightcore)</td><td>DT + efeito sonoro nightcore.</td><td>NC para músicas animadas.</td></tr>
+    <tr><td><code>HT</code> (Half Time)</td><td>Reduz velocidade em 25%; penalidade de pp.</td><td>HT para treinar leitura.</td></tr>
+    <tr><td><code>EZ</code> (Easy)</td><td>Diminui AR, CS, OD e HP pela metade; penalidade grande.</td><td>EZ para iniciantes.</td></tr>
+    <tr><td><code>FL</code> (Flashlight)</td><td>Visibilidade limitada ao redor do cursor; grande bônus.</td><td>FL em mapas curtos.</td></tr>
+    <tr><td><code>SO</code> (Spun Out)</td><td>Auto‑gira spinners; pequeno bônus.</td><td>SO para evitar girar manualmente.</td></tr>
+    <tr><td><code>NF</code> (No Fail)</td><td>Impede falhar, mas reduz pp.</td><td>NF para treinar mapas difíceis.</td></tr>
+    <tr><td><code>SD</code> (Sudden Death)</td><td>Um miss = falha imediata.</td><td>SD para desafio extremo.</td></tr>
+    <tr><td><code>PF</code> (Perfect)</td><td>SD + requer FC; bônus extra.</td><td>PF para runs perfeitas.</td></tr>
+    <tr><td><code>RX</code> (Relax)</td><td>Remove clique; apenas movimentar o cursor.</td><td>RX para relaxar.</td></tr>
+    <tr><td><code>AP</code> (AutoPilot)</td><td>Cursor automático; jogador só clica.</td><td>AP para treinar timing.</td></tr>
+    <tr><td><code>AU</code> (Auto)</td><td>Bot joga mapa perfeitamente.</td><td>AU para assistir jogada perfeita.</td></tr>
+  </table>
+  <div style="margin-top:8px;font-size:12px;">Saiba mais: <a href="https://osu.ppy.sh/wiki/pt/Game_modifier" target="_blank">Wiki oficial de Mods</a></div>
+</div>
+
+<!-- ================== PONTUAÇÃO & STATUS ================== -->
+<div class="section" id="pontuacao">
+  <h2><span class="icon">🏆</span>Pontuação & Status</h2>
+  <table>
+    <tr><th>Termo</th><th>Significado</th><th>Exemplo</th></tr>
+    <tr><td><code>SS</code></td><td>100% de accuracy (300 em todos objetos).</td><td>SS em mapa difícil.</td></tr>
+    <tr><td><code>XH</code></td><td>SS com Hidden.</td><td>XH em mapa curto.</td></tr>
+    <tr><td><code>SH</code></td><td>S com Hidden.</td><td>SH em mapa técnico.</td></tr>
+    <tr><td><code>S</code>, <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code></td><td>Rank baseado em accuracy e combo.</td><td>Rank A: boa precisão, alguns misses.</td></tr>
+    <tr><td><code>FC</code> (Full Combo)</td><td>Mapa completado sem quebrar combo.</td><td>FC em mapa de 1000 notas.</td></tr>
+    <tr><td><code>Sliderbreak</code></td><td>Perda de combo por slider incompleto.</td><td>Sliderbreak no final do mapa.</td></tr>
+    <tr><td><code>Retry</code></td><td>Reiniciar tentativa do mapa.</td><td>Retry após miss no início.</td></tr>
+    <tr><td><code>Pass</code></td><td>Completar mapa sem falhar.</td><td>Pass em mapa difícil.</td></tr>
+    <tr><td><code>Top Play</code></td><td>Melhor score do jogador (mais pp).</td><td>Top play com 500pp.</td></tr>
+    <tr><td><code>Rank Aprovado</code></td><td>Mapa oficialmente ranqueado para pp.</td><td>Mapa aprovado aparece no ranking global.</td></tr>
+  </table>
+  <div style="margin-top:8px;font-size:12px;">Saiba mais: <a href="https://osu.ppy.sh/wiki/pt/Score" target="_blank">Wiki de Pontuação</a></div>
+</div>
+
+<!-- ================== GAMEPLAY & MECÂNICAS ================== -->
+<div class="section" id="gameplay">
+  <h2><span class="icon">🎮</span>Gameplay & Mecânicas</h2>
+  <table>
+    <tr><th>Termo</th><th>Definição</th><th>Exemplo</th></tr>
+    <tr><td><code>Approach Circle</code></td><td>Anel que encolhe para indicar tempo de hit.</td><td>Acertar quando o círculo se encaixa.</td></tr>
+    <tr><td><code>Circle</code></td><td>Objeto base a ser clicado.</td><td>Mapa só de circles.</td></tr>
+    <tr><td><code>Slider</code></td><td>Objeto onde se segue o caminho mantendo o cursor.</td><td>Slider longo no final do mapa.</td></tr>
+    <tr><td><code>Spinner</code></td><td>Rodar o cursor em círculos até preencher barra.</td><td>Spinner de 5 segundos.</td></tr>
+    <tr><td><code>Stream</code></td><td>Série rápida de círculos equidistantes.</td><td>Stream de 200 BPM.</td></tr>
+    <tr><td><code>Jump</code></td><td>Círculos espaçados exigindo movimentação rápida.</td><td>Jump entre notas distantes.</td></tr>
+    <tr><td><code>Burst</code></td><td>Mini‑stream curto, geralmente 5‑7 notas.</td><td>Burst no início do mapa.</td></tr>
+    <tr><td><code>Aim</code></td><td>Habilidade de mover o cursor com precisão.</td><td>Aim em mapas de jumps.</td></tr>
+    <tr><td><code>Tap</code></td><td>Tempo de pressionar as teclas (teclado ou mouse).</td><td>Tap rápido em streams.</td></tr>
+    <tr><td><code>Kiai Time</code></td><td>Trecho enfatizado da música; objetos piscam.</td><td>Kiai no refrão.</td></tr>
+  </table>
+  <div style="margin-top:8px;font-size:12px;">Saiba mais: <a href="https://osu.ppy.sh/wiki/pt/Gameplay" target="_blank">Wiki de Gameplay</a></div>
+</div>
+
+<!-- ================== COMUNIDADE & OUTROS ================== -->
+<div class="section" id="comunidade">
+  <h2><span class="icon">🌐</span>Comunidade & Outros</h2>
+  <table>
+    <tr><th>Termo</th><th>Descrição</th><th>Exemplo</th></tr>
+    <tr><td><code>Beatmap</code></td><td>Arquivo do mapa contendo objetos, áudio e dados.</td><td>Baixar beatmap no site oficial.</td></tr>
+    <tr><td><code>Beatmapset</code></td><td>Conjunto de dificuldades da mesma música.</td><td>Beatmapset com 5 dificuldades.</td></tr>
+    <tr><td><code>Mapper</code></td><td>Jogador que cria beatmaps.</td><td>Mapper famoso: Monstrata.</td></tr>
+    <tr><td><code>Modding</code></td><td>Processo de feedback para ranquear mapas.</td><td>Modding em mapas pendentes.</td></tr>
+    <tr><td><code>Skin</code></td><td>Pacote que altera gráficos e sons do jogo.</td><td>Skin personalizada para leitura.</td></tr>
+    <tr><td><code>PP Farm</code></td><td>Prática de jogar mapas fáceis de pp para subir ranking.</td><td>Farmar pp em mapas curtos.</td></tr>
+    <tr><td><code>Replay</code></td><td>Gravação de uma jogada para assistir depois.</td><td>Assistir replay do top play.</td></tr>
+    <tr><td><code>Tablet</code></td><td>Dispositivo de caneta usado para controlar cursor.</td><td>Jogar com tablet Huion.</td></tr>
+    <tr><td><code>Alternate</code></td><td>Estilo de digitação alternando entre duas teclas.</td><td>Alternar Z e X para streams.</td></tr>
+    <tr><td><code>Singletap</code></td><td>Usar uma única tecla para todas notas (“stamina”).</td><td>Singletap em mapas lentos.</td></tr>
+  </table>
+  <div style="margin-top:8px;font-size:12px;">Saiba mais: <a href="https://osu.ppy.sh/wiki/pt/Glossary" target="_blank">Glossário oficial</a></div>
+</div>
+
+<!-- ================== EXTRAS & TERMOS AVANÇADOS ================== -->
+<div class="section" id="extras">
+  <h2><span class="icon">✨</span>Extras & Termos Avançados</h2>
+  <table>
+    <tr><th>Termo</th><th>Descrição</th><th>Exemplo</th></tr>
+    <tr><td><code>DT Farm</code></td><td>Farmar pp usando mapas fáceis com Double Time.</td><td>DT farm em mapas curtos de 2 minutos.</td></tr>
+    <tr><td><code>Tech map</code></td><td>Mapa com padrões complexos e leitura difícil.</td><td>Tech map com sliders incomuns.</td></tr>
+    <tr><td><code>Reading</code></td><td>Habilidade de ler padrões complexos.</td><td>Reading em mapas AR baixo.</td></tr>
+    <tr><td><code>Stamina</code></td><td>Resistência para tocar notas rápidas por muito tempo.</td><td>Stamina em streams longos.</td></tr>
+    <tr><td><code>Choke</code></td><td>Errar perto do final de um mapa após desempenho perfeito.</td><td>Choke no último slider.</td></tr>
+    <tr><td><code>Noob</code></td><td>Jogador iniciante.</td><td>Noob jogando mapas fáceis.</td></tr>
+    <tr><td><code>Godmode</code></td><td>Jogada extremamente boa, quase impossível.</td><td>Godmode em mapa 7★.</td></tr>
+    <tr><td><code>Acc player</code></td><td>Jogador focado em precisão.</td><td>Acc player com 99% em todos mapas.</td></tr>
+    <tr><td><code>Speed player</code></td><td>Jogador focado em mapas rápidos.</td><td>Speed player em 250 BPM.</td></tr>
+    <tr><td><code>Aim player</code></td><td>Jogador focado em mapas de jumps.</td><td>Aim player em mapas de arcos longos.</td></tr>
+    <tr><td><code>ScoreV2</code></td><td>Sistema de pontuação mais recente do osu!.</td><td>ScoreV2 em torneios oficiais.</td></tr>
+    <tr><td><code>Leaderboard</code></td><td>Ranking de scores dos jogadores.</td><td>Entrar no leaderboard global.</td></tr>
+    <tr><td><code>Global Ranking</code></td><td>Ranking mundial de jogadores.</td><td>Top 100 no global ranking.</td></tr>
+    <tr><td><code>Local Ranking</code></td><td>Ranking local do jogador.</td><td>Top 1 no local ranking.</td></tr>
+    <tr><td><code>Unranked</code></td><td>Mapa não ranqueado oficialmente.</td><td>Jogar mapas unranked para diversão.</td></tr>
+    <tr><td><code>Loved</code></td><td>Mapa amado pela comunidade, mas sem pp.</td><td>Loved maps populares.</td></tr>
+    <tr><td><code>Graveyard</code></td><td>Mapa abandonado sem atualizações.</td><td>Mapa ficou no graveyard por 1 ano.</td></tr>
+    <tr><td><code>Pending</code></td><td>Mapa aguardando modding/ranking.</td><td>Mapa pending esperando feedback.</td></tr>
+    <tr><td><code>Qualified</code></td><td>Mapa aprovado para ranqueamento.</td><td>Mapa qualified antes de ser ranked.</td></tr>
+    <tr><td><code>BN</code> (Beatmap Nominator)</td><td>Usuário responsável por aprovar mapas.</td><td>BN aprovou o mapa para ranking.</td></tr>
+    <tr><td><code>QAT</code> (Quality Assurance Team)</td><td>Equipe que revisa mapas para qualidade.</td><td>QAT removeu mapa por problemas.</td></tr>
+  </table>
+  <div style="margin-top:8px;font-size:12px;">Saiba mais: <a href="https://osu.ppy.sh/wiki/pt/Ranking" target="_blank">Wiki de Ranking</a></div>
+</div>
+
+</body>
+</html>
